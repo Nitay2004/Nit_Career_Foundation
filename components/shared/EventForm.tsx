@@ -10,7 +10,7 @@ import { eventDefaultValues } from "@/constants"
 import * as z from 'zod'
 import Dropdown from "./Dropdown"
 import { Textarea } from "@/components/ui/textarea"
-import { FileUploader } from "./FileUploader"
+// import { FileUploader } from "./FileUploader"
 import { useState } from "react"
 import Image from "next/image"
 import DatePicker from "react-datepicker";
@@ -94,10 +94,10 @@ const EventForm = ({ userId, type }: EventFormProps) => {
             render={({ field }) => (
               <FormItem className="w-full">
                 <FormControl className="h-72">
-                  <FileUploader 
+{/*                   <FileUploader 
                     onFieldChange={field.onChange}
                     imageUrl={field.value}
-                    setFiles={setFiles}/>
+                    setFiles={setFiles}/> */}
                   
                 </FormControl>
                 <FormMessage />
